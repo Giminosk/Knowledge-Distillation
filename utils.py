@@ -11,6 +11,7 @@ STD = [0.229, 0.224, 0.225]
 
 
 def get_train_transform():
+
     return A.Compose([
         A.HorizontalFlip(p=0.5),
         A.Rotate(limit=30, p=0.5),
